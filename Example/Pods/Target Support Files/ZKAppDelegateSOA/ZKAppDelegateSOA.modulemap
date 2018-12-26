@@ -1,0 +1,6 @@
+framework module ZKAppDelegateSOA {
+  umbrella header "ZKAppDelegateSOA-umbrella.h"
+
+  export *
+  module * { export * }
+}

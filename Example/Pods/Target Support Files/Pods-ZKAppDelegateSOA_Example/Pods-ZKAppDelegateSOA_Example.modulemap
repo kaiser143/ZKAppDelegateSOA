@@ -1,0 +1,6 @@
+framework module Pods_ZKAppDelegateSOA_Example {
+  umbrella header "Pods-ZKAppDelegateSOA_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
