@@ -113,8 +113,8 @@
 }
 
 - (void)application:(UIApplication *)application
-didReceiveRemoteNotification:(NSDictionary *)userInfo
-fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler {
+    didReceiveRemoteNotification:(NSDictionary *)userInfo
+          fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandler {
     for (id<ZKService> each in self.services) {
         if ([each respondsToSelector:_cmd]) {
             [each application:application didReceiveRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
@@ -135,31 +135,31 @@ fetchCompletionHandler:(void (^)(UIBackgroundFetchResult result))completionHandl
 #pragma clang diagnostic ignored "-Wstrict-prototypes"
 
 - (void)application:(UIApplication *)application
-handleActionWithIdentifier:(nullable NSString *)identifier
-forRemoteNotification:(NSDictionary *)userInfo
-  completionHandler:(void(^)())completionHandler {
+    handleActionWithIdentifier:(nullable NSString *)identifier
+         forRemoteNotification:(NSDictionary *)userInfo
+             completionHandler:(void (^)())completionHandler {
     for (id<ZKService> each in self.services) {
         if ([each respondsToSelector:_cmd]) {
             [each application:application
-     handleActionWithIdentifier:identifier
-          forRemoteNotification:userInfo
-              completionHandler:completionHandler];
+                handleActionWithIdentifier:identifier
+                     forRemoteNotification:userInfo
+                         completionHandler:completionHandler];
         }
     }
 }
 
 - (void)application:(UIApplication *)application
-handleActionWithIdentifier:(nullable NSString *)identifier
-forRemoteNotification:(NSDictionary *)userInfo
-   withResponseInfo:(NSDictionary *)responseInfo
-  completionHandler:(void(^)())completionHandler API_AVAILABLE(ios(9.0)) {
+    handleActionWithIdentifier:(nullable NSString *)identifier
+         forRemoteNotification:(NSDictionary *)userInfo
+              withResponseInfo:(NSDictionary *)responseInfo
+             completionHandler:(void (^)())completionHandler API_AVAILABLE(ios(9.0)) {
     for (id<ZKService> each in self.services) {
         if ([each respondsToSelector:_cmd]) {
             [each application:application
-     handleActionWithIdentifier:identifier
-          forRemoteNotification:userInfo
-               withResponseInfo:responseInfo
-              completionHandler:completionHandler];
+                handleActionWithIdentifier:identifier
+                     forRemoteNotification:userInfo
+                          withResponseInfo:responseInfo
+                         completionHandler:completionHandler];
         }
     }
 }
@@ -174,31 +174,31 @@ forRemoteNotification:(NSDictionary *)userInfo
 }
 
 - (void)application:(UIApplication *)application
-handleActionWithIdentifier:(nullable NSString *)identifier
-forLocalNotification:(UILocalNotification *)notification
-  completionHandler:(void(^)())completionHandler {
+    handleActionWithIdentifier:(nullable NSString *)identifier
+          forLocalNotification:(UILocalNotification *)notification
+             completionHandler:(void (^)())completionHandler {
     for (id<ZKService> each in self.services) {
         if ([each respondsToSelector:_cmd]) {
             [each application:application
-     handleActionWithIdentifier:identifier
-           forLocalNotification:notification
-              completionHandler:completionHandler];
+                handleActionWithIdentifier:identifier
+                      forLocalNotification:notification
+                         completionHandler:completionHandler];
         }
     }
 }
 
 - (void)application:(UIApplication *)application
-handleActionWithIdentifier:(nullable NSString *)identifier
-forLocalNotification:(UILocalNotification *)notification
-   withResponseInfo:(NSDictionary *)responseInfo
-  completionHandler:(void(^)())completionHandler API_AVAILABLE(ios(9.0)) {
+    handleActionWithIdentifier:(nullable NSString *)identifier
+          forLocalNotification:(UILocalNotification *)notification
+              withResponseInfo:(NSDictionary *)responseInfo
+             completionHandler:(void (^)())completionHandler API_AVAILABLE(ios(9.0)) {
     for (id<ZKService> each in self.services) {
         if ([each respondsToSelector:_cmd]) {
             [each application:application
-     handleActionWithIdentifier:identifier
-           forLocalNotification:notification
-               withResponseInfo:responseInfo
-              completionHandler:completionHandler];
+                handleActionWithIdentifier:identifier
+                      forLocalNotification:notification
+                          withResponseInfo:responseInfo
+                         completionHandler:completionHandler];
         }
     }
 }
@@ -206,7 +206,7 @@ forLocalNotification:(UILocalNotification *)notification
 #pragma clang diagnostic pop
 
 - (void)application:(UIApplication *)application
-didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings {
+    didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings {
     for (id<ZKService> each in self.services) {
         if ([each respondsToSelector:_cmd]) {
             [each application:application didRegisterUserNotificationSettings:notificationSettings];
@@ -217,7 +217,7 @@ didRegisterUserNotificationSettings:(UIUserNotificationSettings *)notificationSe
 #pragma mark - Handling Continuing User Activity and Handling Quick Actions
 
 - (BOOL)application:(UIApplication *)application
-willContinueUserActivityWithType:(NSString *)userActivityType {
+    willContinueUserActivityWithType:(NSString *)userActivityType {
     BOOL result = NO;
     for (id<ZKService> each in self.services) {
         if ([each respondsToSelector:_cmd]) {
@@ -228,8 +228,8 @@ willContinueUserActivityWithType:(NSString *)userActivityType {
 }
 
 - (BOOL)application:(UIApplication *)application
-continueUserActivity:(NSUserActivity *)userActivity
- restorationHandler:(void(^)(NSArray<id<UIUserActivityRestoring>> * __nullable restorableObjects))restorationHandler NS_AVAILABLE_IOS(8_0) {
+    continueUserActivity:(NSUserActivity *)userActivity
+      restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> *__nullable restorableObjects))restorationHandler NS_AVAILABLE_IOS(8_0) {
     BOOL result = NO;
     for (id<ZKService> each in self.services) {
         if ([each respondsToSelector:_cmd]) {
@@ -239,8 +239,38 @@ continueUserActivity:(NSUserActivity *)userActivity
     return result;
 }
 
+- (BOOL)application:(UIApplication *)application openURL:(nonnull NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(nonnull id)annotation {
+    BOOL result = NO;
+    for (id<ZKService> each in self.services) {
+        if ([each respondsToSelector:_cmd]) {
+            result = result || [each application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+        }
+    }
+    return result;
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    BOOL result = NO;
+    for (id<ZKService> each in self.services) {
+        if ([each respondsToSelector:_cmd]) {
+            result = result || [each application:application handleOpenURL:url];
+        }
+    }
+    return result;
+}
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options {
+    BOOL result = NO;
+    for (id<ZKService> each in self.services) {
+        if ([each respondsToSelector:_cmd]) {
+            result = result || [each application:app openURL:url options:options];
+        }
+    }
+    return result;
+}
+
 - (void)application:(UIApplication *)application
-didUpdateUserActivity:(NSUserActivity *)userActivity {
+    didUpdateUserActivity:(NSUserActivity *)userActivity {
     for (id<ZKService> each in self.services) {
         if ([each respondsToSelector:_cmd]) {
             [each application:application didUpdateUserActivity:userActivity];
@@ -249,8 +279,8 @@ didUpdateUserActivity:(NSUserActivity *)userActivity {
 }
 
 - (void)application:(UIApplication *)application
-didFailToContinueUserActivityWithType:(NSString *)userActivityType
-              error:(NSError *)error {
+    didFailToContinueUserActivityWithType:(NSString *)userActivityType
+                                    error:(NSError *)error {
     for (id<ZKService> each in self.services) {
         if ([each respondsToSelector:_cmd]) {
             [each application:application didFailToContinueUserActivityWithType:userActivityType error:error];
@@ -259,8 +289,8 @@ didFailToContinueUserActivityWithType:(NSString *)userActivityType
 }
 
 - (void)application:(UIApplication *)application
-performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem
-  completionHandler:(void (^)(BOOL succeeded))completionHandler  API_AVAILABLE(ios(9.0)) {
+    performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem
+               completionHandler:(void (^)(BOOL succeeded))completionHandler API_AVAILABLE(ios(9.0)) {
     for (id<ZKService> each in self.services) {
         if ([each respondsToSelector:_cmd]) {
             [each application:application performActionForShortcutItem:shortcutItem completionHandler:completionHandler];
@@ -272,7 +302,7 @@ performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem
 
 - (void)registerServiceWithClass:(Class)cls {
     if (!cls) return;
-    
+
     [self addService:[cls new]];
 }
 
