@@ -1,6 +1,6 @@
 //
 //  ZKAppDelegateSOA.h
-//  FBSnapshotTestCase
+//  ZKAppDelegateSOA
 //
 //  Created by Kaiser on 2018/12/9.
 //
