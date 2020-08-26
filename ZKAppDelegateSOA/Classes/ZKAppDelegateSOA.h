@@ -14,13 +14,24 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
+/*!
+ *  @code
+ @interface JPushAppDelegateService : NSObject <ZKService> @end
+ 
+ @implementation JPushAppDelegateService
+ + (void)load {
+    [[ZKAppDelegateSOA sharedInstance] registerServiceWithClass:self];
+ }
+ @end
+ *  @endcode
+ */
 @interface ZKAppDelegateSOA : NSObject <UIApplicationDelegate>
 
 + (instancetype)sharedInstance;
 
 - (NSArray<id<ZKService>> *)allServices;
 
-- (void)registerServiceWithClass:(nonnull Class)cls;
+- (void)registerServiceWithClass:(nonnull Class<ZKService>)cls;
 
 @end
 
