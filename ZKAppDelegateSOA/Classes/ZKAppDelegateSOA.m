@@ -137,7 +137,7 @@
 - (void)application:(UIApplication *)application
     handleActionWithIdentifier:(nullable NSString *)identifier
          forRemoteNotification:(NSDictionary *)userInfo
-             completionHandler:(void (^)())completionHandler {
+             completionHandler:(void (^)(void))completionHandler {
     for (id<ZKService> each in self.services) {
         if ([each respondsToSelector:_cmd]) {
             [each application:application
@@ -152,7 +152,7 @@
     handleActionWithIdentifier:(nullable NSString *)identifier
          forRemoteNotification:(NSDictionary *)userInfo
               withResponseInfo:(NSDictionary *)responseInfo
-             completionHandler:(void (^)())completionHandler API_AVAILABLE(ios(9.0)) {
+             completionHandler:(void (^)(void))completionHandler API_AVAILABLE(ios(9.0)) {
     for (id<ZKService> each in self.services) {
         if ([each respondsToSelector:_cmd]) {
             [each application:application
@@ -176,7 +176,7 @@
 - (void)application:(UIApplication *)application
     handleActionWithIdentifier:(nullable NSString *)identifier
           forLocalNotification:(UILocalNotification *)notification
-             completionHandler:(void (^)())completionHandler {
+             completionHandler:(void (^)(void))completionHandler {
     for (id<ZKService> each in self.services) {
         if ([each respondsToSelector:_cmd]) {
             [each application:application
@@ -191,7 +191,7 @@
     handleActionWithIdentifier:(nullable NSString *)identifier
           forLocalNotification:(UILocalNotification *)notification
               withResponseInfo:(NSDictionary *)responseInfo
-             completionHandler:(void (^)())completionHandler API_AVAILABLE(ios(9.0)) {
+             completionHandler:(void (^)(void))completionHandler API_AVAILABLE(ios(9.0)) {
     for (id<ZKService> each in self.services) {
         if ([each respondsToSelector:_cmd]) {
             [each application:application
@@ -294,6 +294,14 @@
     for (id<ZKService> each in self.services) {
         if ([each respondsToSelector:_cmd]) {
             [each application:application performActionForShortcutItem:shortcutItem completionHandler:completionHandler];
+        }
+    }
+}
+
+- (void)application:(UIApplication *)application handleEventsForBackgroundURLSession:(NSString *)identifier completionHandler:(void (^)(void))completionHandler {
+    for (id<ZKService> each in self.services) {
+        if ([each respondsToSelector:_cmd]) {
+            [each application:application handleEventsForBackgroundURLSession:identifier completionHandler:completionHandler];
         }
     }
 }
