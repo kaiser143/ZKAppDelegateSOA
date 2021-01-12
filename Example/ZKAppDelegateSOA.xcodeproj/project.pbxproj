@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		2AECC3B58E5F8159962335C3 /* Pods-ZKAppDelegateSOA_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKAppDelegateSOA_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZKAppDelegateSOA_Example/Pods-ZKAppDelegateSOA_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4339DE5B188FB30B30A1011D /* Pods_ZKAppDelegateSOA_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZKAppDelegateSOA_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4900BF172265FF1C7DC0582E /* ZKAppDelegateSOA.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZKAppDelegateSOA.podspec; path = ../ZKAppDelegateSOA.podspec; sourceTree = "<group>"; };
+		4900BF172265FF1C7DC0582E /* ZKAppDelegateSOA.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZKAppDelegateSOA.podspec; path = ../ZKAppDelegateSOA.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ZKAppDelegateSOA_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZKAppDelegateSOA_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,11 +62,11 @@
 		6A147548BE082510676A780D /* Pods_ZKAppDelegateSOA_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZKAppDelegateSOA_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D9AB5EA5EA5B0D25E2A84D7 /* Pods-ZKAppDelegateSOA_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKAppDelegateSOA_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZKAppDelegateSOA_Tests/Pods-ZKAppDelegateSOA_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		762AB09065C0BFBCCC58C3C8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		762AB09065C0BFBCCC58C3C8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3ECCA717A040034DA3DDFE4 /* Pods-ZKAppDelegateSOA_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKAppDelegateSOA_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZKAppDelegateSOA_Example/Pods-ZKAppDelegateSOA_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		EA874D0DA3ED1E11FA4D6DE6 /* Pods-ZKAppDelegateSOA_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZKAppDelegateSOA_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZKAppDelegateSOA_Tests/Pods-ZKAppDelegateSOA_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FDEC88E5240E17723FAF5705 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FDEC88E5240E17723FAF5705 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,7 +255,7 @@
 			};
 			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "ZKAppDelegateSOA" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,

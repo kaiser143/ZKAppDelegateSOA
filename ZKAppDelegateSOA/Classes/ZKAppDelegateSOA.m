@@ -261,9 +261,11 @@
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options {
     BOOL result = NO;
-    for (id<ZKService> each in self.services) {
-        if ([each respondsToSelector:_cmd]) {
-            result = result || [each application:app openURL:url options:options];
+    if (@available(iOS 9, *)) {
+        for (id<ZKService> each in self.services) {
+            if ([each respondsToSelector:_cmd]) {
+                result = result || [each application:app openURL:url options:options];
+            }
         }
     }
     return result;
