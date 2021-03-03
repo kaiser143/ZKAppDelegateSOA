@@ -37,10 +37,21 @@
 }
 
 - (void)forwardInvocation:(NSInvocation *)invocation {
+    NSMethodSignature *methodSignature = invocation.methodSignature;
+    const char *returnType = methodSignature.methodReturnType;
+    BOOL returnBool = 0 == strcmp(returnType, @encode(BOOL));
+    
     if ([invocation.target conformsToProtocol:@protocol(UIApplicationDelegate)]) {
         for (id<ZKService> each in self.services) {
             if ([each respondsToSelector:invocation.selector]) {
                 [invocation invokeWithTarget:each];
+                
+                if (returnBool) {
+                    // 返回值为BOOL
+                    void *returnValue;
+                    [invocation getReturnValue:&returnValue];
+                    [invocation setReturnValue:&returnValue];
+                }
             }
         }
     } else {

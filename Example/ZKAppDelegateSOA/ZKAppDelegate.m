@@ -31,7 +31,8 @@
 - (BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [[ZKAppDelegateSOA sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+    BOOL returnBool = [[ZKAppDelegateSOA sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+    NSLog(@"%@", returnBool ? @"YES": @"NO");
     return YES;
 }
 
