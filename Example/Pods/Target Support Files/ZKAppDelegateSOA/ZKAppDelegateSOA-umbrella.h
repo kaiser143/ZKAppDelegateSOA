@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "ZKAppDelegateSOA.h"
 
 FOUNDATION_EXPORT double ZKAppDelegateSOAVersionNumber;
 FOUNDATION_EXPORT const unsigned char ZKAppDelegateSOAVersionString[];

@@ -7,40 +7,84 @@
 //
 
 #import "ZKAppDelegate.h"
+#import <ZKAppDelegateSOA/ZKAppDelegateSOA.h>
 
-@implementation ZKAppDelegate
+@interface JPushAppDelegateService : NSObject <ZKService>
+@end
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+@implementation JPushAppDelegateService
++ (void)load {
+    [[ZKAppDelegateSOA sharedInstance] registerServiceWithClass:self];
+}
+
+- (BOOL)application:(UIApplication *)application
+    didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSLog(NSStringFromSelector(_cmd), nil);
     return YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application
-{
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+@end
+
+@implementation ZKAppDelegate
+
+- (BOOL)application:(UIApplication *)application
+    didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // Override point for customization after application launch.
+    [[ZKAppDelegateSOA sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+    return YES;
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
-{
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+- (void)applicationWillResignActive:(UIApplication *)application {
+    // Sent when the application is about to move from active to inactive state. This can occur for
+    // certain types of temporary interruptions (such as an incoming phone call or SMS message) or
+    // when the user quits the application and it begins the transition to the background state. Use
+    // this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates.
+    // Games should use this method to pause the game.
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
-{
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    // Use this method to release shared resources, save user data, invalidate timers, and store
+    // enough application state information to restore your application to its current state in case
+    // it is terminated later. If your application supports background execution, this method is
+    // called instead of applicationWillTerminate: when the user quits.
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+- (void)applicationWillEnterForeground:(UIApplication *)application {
+    // Called as part of the transition from the background to the inactive state; here you can undo
+    // many of the changes made on entering the background.
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    // Restart any tasks that were paused (or not yet started) while the application was inactive.
+    // If the application was previously in the background, optionally refresh the user interface.
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+    // Called when the application is about to terminate. Save data if appropriate. See also
+    // applicationDidEnterBackground:.
+}
+
+//- (BOOL)respondsToSelector:(SEL)aSelector {
+//    return YES;
+//}
+
+- (void)forwardInvocation:(NSInvocation *)invocation {
+//    if ([invocation.target conformsToProtocol:@protocol(UIApplicationDelegate)]) {
+//
+//    }
+    if (invocation.target == ZKAppDelegateSOA.sharedInstance) {
+        [[ZKAppDelegateSOA sharedInstance] forwardInvocation:invocation];
+        return;
+    }
+    [super forwardInvocation:invocation];
+//    for (id object in self.implementations.allValues) {
+//        if ([object respondsToSelector:invocation.selector]) {
+//            [invocation invokeWithTarget:object];
+//            return;
+//        }
+//    }
+//    [super forwardInvocation:invocation];
 }
 
 @end

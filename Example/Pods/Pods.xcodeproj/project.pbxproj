@@ -7,413 +7,211 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0441E82476A9178178DF00C2AEE41E9A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2379EEB1B2E42B0DADE15CB60E65F85 /* QuartzCore.framework */; };
-		0611DC293AF883D4C4333A092D3D3668 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DA36E1CA4C3D87F6E85F737FA483C3 /* Foundation.framework */; };
-		0D5E847B5619856E1C22A74EC898F69C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DA36E1CA4C3D87F6E85F737FA483C3 /* Foundation.framework */; };
-		163DC390363C339936B3114C72FE6716 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */; };
-		387D066A1A34ED7DF0F716CB3A8B746D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		459F58959A5C947E77A424BF94098D08 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4792533D7EE0F440EE722DA4999E845C /* FBSnapshotTestCase-dummy.m */; };
-		4B12520F21D30F6A000CBA5D /* ZKAppDelegateSOA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B12520D21D30F6A000CBA5D /* ZKAppDelegateSOA.m */; };
-		4B12521021D30F6A000CBA5D /* ZKAppDelegateSOA.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B12520E21D30F6A000CBA5D /* ZKAppDelegateSOA.h */; };
-		4C022C88B9E8D527B1426B5281756EDE /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */; };
-		4CF5865BAF828AB9A7C56F3A1B1C856F /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A11D5B54955E3381F067364E427B571A /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D600539FC2E29EA7E28A2DA8A8B328C /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		59FD5FAEFCF13CD39358A6F36C50BED8 /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1374B79237CAC07693E99442FBED1F15 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5C2B936FE620D6FCAF7D6F6A6818C4F5 /* Pods-ZKAppDelegateSOA_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B1166F02AC155B65E3A2F52ECD94FC53 /* Pods-ZKAppDelegateSOA_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		620002D55F8D093DFB3E88E2CF8DCC60 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CCF8FB06D0D8E2640C57D460AB67AF6 /* XCTest.framework */; };
-		63EA4B9CBBAB30A69C2D73693019FDC5 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 432938111B6FF0189EFFEDF2F845B308 /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		6B71ACB6D56B970D0B2AD8EE2B79D96F /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */; };
-		6EC17B6986CC7F9EBDF0521AE86F371B /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 39577E2B806B8B2D019998DE60728F63 /* FBSnapshotTestCase.m */; };
-		73247510D7AD93E5FDBA474B353BF919 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		8A7A65F2B6E0705461AE16CB59A7BEB9 /* Pods-ZKAppDelegateSOA_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 524A8D2C0162DF68CF514AD925316974 /* Pods-ZKAppDelegateSOA_Example-dummy.m */; };
-		8CAC3B81FFAB2342335164D30A3ACCD1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37B206F681A10A3CEFD3120DC6A65DCE /* UIKit.framework */; };
-		93D90AB7EBD57BDD61ACBC75534453D6 /* ZKAppDelegateSOA-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E38CACCBE059A639E0C9B02AF396E150 /* ZKAppDelegateSOA-dummy.m */; };
-		A57F2E08CEC5ECCC1A02DAC71B12D988 /* Pods-ZKAppDelegateSOA_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA866CB7021096D5FE0002F053F7CE9 /* Pods-ZKAppDelegateSOA_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A9256DA4688DA94D0B27B348BFC1D717 /* Pods-ZKAppDelegateSOA_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 275D8840F93D783E57AE85CCF8AAEC4E /* Pods-ZKAppDelegateSOA_Tests-dummy.m */; };
-		AD7A33E83DDA1750ACEEBD2036217445 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DA36E1CA4C3D87F6E85F737FA483C3 /* Foundation.framework */; };
-		AFF108D6E8D891F7B8148CA0158B2A23 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECE81A9AEC1ED1057A9C3C88DBCEBE /* UIApplication+StrictKeyWindow.m */; };
-		B08725BB938AA3AACCA3C8C818FA4CF6 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = E37899BD4B349060AA147E2A3721D3A2 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BCDA265400AF5BCF21074C5AF1FD09A8 /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = B9109B8B333B5A1A3E92EFC09EDC10AC /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C4C99DB49F9F8E04DD40B48DB909098A /* ZKAppDelegateSOA-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC38D6649DA209EBD4055C353B98590E /* ZKAppDelegateSOA-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8C5B4B0E66C9074F609DD75C04C36AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DA36E1CA4C3D87F6E85F737FA483C3 /* Foundation.framework */; };
-		E2E2BC984CCC1978CB9E22B72258C641 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */; };
-		E4877E179010E4E588B6E9E61B047B60 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CEF7D6C5E08AB80E58DABC75D882BC /* UIImage+Diff.m */; };
-		EA2C5FBB576DBC67BE3E2F5897704BBF /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DBFBDCC891B770A2AC9EF0FB164B751 /* UIImage+Snapshot.m */; };
+		0C037E8AFFA13CFE463B5570820187B6 /* ZKAppDelegateSOA-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BA65795D7C136BE4834D3EBC36B84069 /* ZKAppDelegateSOA-dummy.m */; };
+		1C33B545E91EBD983D0DC6238F22CD4D /* ZKAppDelegateSOA.h in Headers */ = {isa = PBXBuildFile; fileRef = 8455CA256045690D4938FD556B7D72AC /* ZKAppDelegateSOA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		423868784447477DAE827136299939C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		501875F40C0A283C7C639F0EABC25882 /* Pods-ZKAppDelegateSOA_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0260BA55EB90A9F8A61BEC01CC08AC6D /* Pods-ZKAppDelegateSOA_Example-dummy.m */; };
+		752BA77D70DDDB9E980B0E8F3553BC83 /* Pods-ZKAppDelegateSOA_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4DD6E1EBD12371A3144619EA45C43A1 /* Pods-ZKAppDelegateSOA_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACD63D9B7A938E368D48374E908DD717 /* ZKAppDelegateSOA.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EF13876341304D29D51B2261B68315D /* ZKAppDelegateSOA.m */; };
+		CA4EA7AF3D87654A39D75A50B3D574EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D25A51F0DF0A86FAF02EE086D2C84943 /* ZKAppDelegateSOA-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2993FAC3AE1B0A2D074662B06EB858DE /* ZKAppDelegateSOA-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		31BDD6591018A0554E5B368177E02EFF /* PBXContainerItemProxy */ = {
+		1AEC4BEC4429437D3C2DAC980AFE794D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E0A367AF7523A6CB3FDFE765E9A5C7D1;
-			remoteInfo = "Pods-ZKAppDelegateSOA_Example";
-		};
-		5D79A67EC8AFC9F21D45F4596068B1E1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9208F82521C84CC962FB475DC38D3371;
-			remoteInfo = FBSnapshotTestCase;
-		};
-		F532EAE01779D6E2A2E872D2615D8302 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 334A29FCE37772088CA7B4B15CD6E587;
+			remoteGlobalIDString = 2F0D2A4B6FDA9F5E55932F831384E82E;
 			remoteInfo = ZKAppDelegateSOA;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03CBCB3CD1C459B41D93295AFA283C3B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		047397CC4BF7E3618EA99480E31A67B6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
-		09118A2C452D238F1122CEF12786C56F /* Pods_ZKAppDelegateSOA_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZKAppDelegateSOA_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AA866CB7021096D5FE0002F053F7CE9 /* Pods-ZKAppDelegateSOA_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZKAppDelegateSOA_Tests-umbrella.h"; sourceTree = "<group>"; };
-		0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
-		0B3C72E7C7FA7FD0F84247D0EBAEE4EA /* ZKAppDelegateSOA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZKAppDelegateSOA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		10BCA9F536CC6023F4E64213E416C0B4 /* Pods-ZKAppDelegateSOA_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZKAppDelegateSOA_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1374B79237CAC07693E99442FBED1F15 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
-		216C08A1F39D07A11E7AD6607194E766 /* Pods-ZKAppDelegateSOA_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZKAppDelegateSOA_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		275D8840F93D783E57AE85CCF8AAEC4E /* Pods-ZKAppDelegateSOA_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZKAppDelegateSOA_Tests-dummy.m"; sourceTree = "<group>"; };
-		2EECE81A9AEC1ED1057A9C3C88DBCEBE /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
-		2F7AFDFA7B6E1F8EE9805B62316F882A /* Pods-ZKAppDelegateSOA_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZKAppDelegateSOA_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		3006B196595B3BEBDE91B5C9319832A8 /* Pods-ZKAppDelegateSOA_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZKAppDelegateSOA_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		37B206F681A10A3CEFD3120DC6A65DCE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		39577E2B806B8B2D019998DE60728F63 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
-		3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
-		3D5157C1F2E2AE917B68DA029C6A625D /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D930BA8BC92B74BC43A95A0683B55C6 /* ZKAppDelegateSOA-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZKAppDelegateSOA-prefix.pch"; sourceTree = "<group>"; };
-		3DBFBDCC891B770A2AC9EF0FB164B751 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
-		3EB507D763629E15416EAC122A164BE0 /* Pods-ZKAppDelegateSOA_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZKAppDelegateSOA_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		403F99A3FB153EAB68C9A03746B54E77 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		432938111B6FF0189EFFEDF2F845B308 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
-		4792533D7EE0F440EE722DA4999E845C /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
-		47EB038BDBFBD359249C9723FC24C9D9 /* Pods-ZKAppDelegateSOA_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZKAppDelegateSOA_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		4B12520D21D30F6A000CBA5D /* ZKAppDelegateSOA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZKAppDelegateSOA.m; path = ZKAppDelegateSOA/Classes/ZKAppDelegateSOA.m; sourceTree = "<group>"; };
-		4B12520E21D30F6A000CBA5D /* ZKAppDelegateSOA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZKAppDelegateSOA.h; path = ZKAppDelegateSOA/Classes/ZKAppDelegateSOA.h; sourceTree = "<group>"; };
-		4CCF8FB06D0D8E2640C57D460AB67AF6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		5186D093B675CA478C2F9C12D55DE61A /* Pods_ZKAppDelegateSOA_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZKAppDelegateSOA_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		524A8D2C0162DF68CF514AD925316974 /* Pods-ZKAppDelegateSOA_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZKAppDelegateSOA_Example-dummy.m"; sourceTree = "<group>"; };
-		58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
-		593AD380FD6E688000D2E3D9CE290559 /* ZKAppDelegateSOA.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZKAppDelegateSOA.xcconfig; sourceTree = "<group>"; };
-		63034467B3F63B004F82F56286B4B1C7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		67E276593855381568F725E69496F29C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B37D7C695D5C6C47A7C093595CD4F06 /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
-		7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
-		85168BBC4C39273DC1AAC3CF309406D6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95A5C8AE9BC16591DFF9EE1EAD5E1D47 /* Pods-ZKAppDelegateSOA_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZKAppDelegateSOA_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9B0B8BEB5DFDC1A7C150470EFCA435B9 /* ZKAppDelegateSOA.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZKAppDelegateSOA.modulemap; sourceTree = "<group>"; };
-		A11D5B54955E3381F067364E427B571A /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
-		AB660C9DD86749DBC30E31418697B209 /* Pods-ZKAppDelegateSOA_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZKAppDelegateSOA_Tests.modulemap"; sourceTree = "<group>"; };
-		AC38D6649DA209EBD4055C353B98590E /* ZKAppDelegateSOA-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZKAppDelegateSOA-umbrella.h"; sourceTree = "<group>"; };
-		B1166F02AC155B65E3A2F52ECD94FC53 /* Pods-ZKAppDelegateSOA_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZKAppDelegateSOA_Example-umbrella.h"; sourceTree = "<group>"; };
-		B9109B8B333B5A1A3E92EFC09EDC10AC /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
-		B9CEF7D6C5E08AB80E58DABC75D882BC /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
-		C2379EEB1B2E42B0DADE15CB60E65F85 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		C34EA934EED9565AB021937E181E7CE8 /* Pods-ZKAppDelegateSOA_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZKAppDelegateSOA_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C84E74ED8475714C3E20CA4D00347628 /* Pods-ZKAppDelegateSOA_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZKAppDelegateSOA_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		D18A63F8F56AE3B036B82C2AD6B400F6 /* ZKAppDelegateSOA.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ZKAppDelegateSOA.podspec; sourceTree = "<group>"; };
-		D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
-		E369A2A6ABAB89C0F3E9F2990DBC1A6A /* Pods-ZKAppDelegateSOA_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZKAppDelegateSOA_Example-resources.sh"; sourceTree = "<group>"; };
-		E37899BD4B349060AA147E2A3721D3A2 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
-		E38CACCBE059A639E0C9B02AF396E150 /* ZKAppDelegateSOA-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZKAppDelegateSOA-dummy.m"; sourceTree = "<group>"; };
-		E3D2BB2A519ED80FDD0837AC99E1D229 /* Pods-ZKAppDelegateSOA_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZKAppDelegateSOA_Example-frameworks.sh"; sourceTree = "<group>"; };
-		E6225EC2D6A6FA9D471279CFA2E1ED5F /* Pods-ZKAppDelegateSOA_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZKAppDelegateSOA_Tests-resources.sh"; sourceTree = "<group>"; };
-		EF519A026B10AC73ABBE6E658308B29D /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
-		F10CBDEE32E5F6BDECFB3D41F7DD0B03 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		F67D28F85A19EDA497855D6A5C14E6BF /* Pods-ZKAppDelegateSOA_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZKAppDelegateSOA_Example.modulemap"; sourceTree = "<group>"; };
-		F6DA36E1CA4C3D87F6E85F737FA483C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0260BA55EB90A9F8A61BEC01CC08AC6D /* Pods-ZKAppDelegateSOA_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZKAppDelegateSOA_Example-dummy.m"; sourceTree = "<group>"; };
+		075D0AC8F4F3D4360EB937021C3A64C9 /* ZKAppDelegateSOA-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ZKAppDelegateSOA-Info.plist"; sourceTree = "<group>"; };
+		1160C8121035BF7CC693DB7E7753CE71 /* ZKAppDelegateSOA.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZKAppDelegateSOA.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1EF13876341304D29D51B2261B68315D /* ZKAppDelegateSOA.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZKAppDelegateSOA.m; path = ZKAppDelegateSOA/Classes/ZKAppDelegateSOA.m; sourceTree = "<group>"; };
+		202F3D60A1499A48B9E2C000703D4C73 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		2993FAC3AE1B0A2D074662B06EB858DE /* ZKAppDelegateSOA-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZKAppDelegateSOA-umbrella.h"; sourceTree = "<group>"; };
+		2A09D9FB1E7B8757776C2E9D640A8316 /* Pods_ZKAppDelegateSOA_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZKAppDelegateSOA_Example.framework; path = "Pods-ZKAppDelegateSOA_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B3B23743CE4D356FA1C31D024537E2C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		495A5F027305295999A6D447C7914CC8 /* Pods-ZKAppDelegateSOA_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZKAppDelegateSOA_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		6EAC3EF1D7220E09CE9F73EEAEE49E86 /* Pods-ZKAppDelegateSOA_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZKAppDelegateSOA_Example-frameworks.sh"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		79CF2E4FC5395341302FA99C0FA5E514 /* Pods-ZKAppDelegateSOA_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZKAppDelegateSOA_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		7BD0E89144CD0CFA9CC436ACDACFDA86 /* Pods-ZKAppDelegateSOA_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZKAppDelegateSOA_Example.modulemap"; sourceTree = "<group>"; };
+		8455CA256045690D4938FD556B7D72AC /* ZKAppDelegateSOA.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZKAppDelegateSOA.h; path = ZKAppDelegateSOA/Classes/ZKAppDelegateSOA.h; sourceTree = "<group>"; };
+		8AB54C5295CA734269165B0FE7E1F309 /* ZKAppDelegateSOA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZKAppDelegateSOA.debug.xcconfig; sourceTree = "<group>"; };
+		963D8E317F4DF97D80D0B80A6F0491B4 /* Pods-ZKAppDelegateSOA_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZKAppDelegateSOA_Example-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A02744346E73162A7EA92F2870D33ED3 /* ZKAppDelegateSOA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZKAppDelegateSOA.framework; path = ZKAppDelegateSOA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF7050DE668828048CF044DEC272F6A4 /* Pods-ZKAppDelegateSOA_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZKAppDelegateSOA_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BA65795D7C136BE4834D3EBC36B84069 /* ZKAppDelegateSOA-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZKAppDelegateSOA-dummy.m"; sourceTree = "<group>"; };
+		C4DD6E1EBD12371A3144619EA45C43A1 /* Pods-ZKAppDelegateSOA_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZKAppDelegateSOA_Example-umbrella.h"; sourceTree = "<group>"; };
+		E3261524EA79830FB897886C0B7FF33C /* ZKAppDelegateSOA.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ZKAppDelegateSOA.modulemap; sourceTree = "<group>"; };
+		F1A691D877714F69F42A6672E90336CF /* ZKAppDelegateSOA-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZKAppDelegateSOA-prefix.pch"; sourceTree = "<group>"; };
+		F3B8ECC4EBA19F8421AB8DF7097F5F9D /* ZKAppDelegateSOA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZKAppDelegateSOA.release.xcconfig; sourceTree = "<group>"; };
+		FBC12F47CB525D6DD54EACDD8EA144F1 /* Pods-ZKAppDelegateSOA_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZKAppDelegateSOA_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		06A086085916D88E8F989A2FD78DFDFB /* Frameworks */ = {
+		A5B5406AA29F308245DFAC5A9D0FE978 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D5E847B5619856E1C22A74EC898F69C /* Foundation.framework in Frameworks */,
-				0441E82476A9178178DF00C2AEE41E9A /* QuartzCore.framework in Frameworks */,
-				8CAC3B81FFAB2342335164D30A3ACCD1 /* UIKit.framework in Frameworks */,
-				620002D55F8D093DFB3E88E2CF8DCC60 /* XCTest.framework in Frameworks */,
+				CA4EA7AF3D87654A39D75A50B3D574EA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1B1434E30A2214F4B5C036EE763292DB /* Frameworks */ = {
+		C79C8D26EA8B1634D8C517479B2C915C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD7A33E83DDA1750ACEEBD2036217445 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		558A25F5A0EED87B4162E3567350FE06 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0611DC293AF883D4C4333A092D3D3668 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7AD98B6A2F38E1A3ED7AFBB4D857186C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C8C5B4B0E66C9074F609DD75C04C36AE /* Foundation.framework in Frameworks */,
+				423868784447477DAE827136299939C5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+		1616C990FF81665994212A6C4928523C /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				77E6A3533BFFC5453A29188F8955E61A /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2287B5EBEAA3C332F8DB9A1E61F5B097 /* FBSnapshotTestCase */ = {
-			isa = PBXGroup;
-			children = (
-				F35791481CAFDD8E7715AE1B44687328 /* Core */,
-				3288FCB8E15F6401DE6220AE5CA1D27B /* Support Files */,
-				99E46DD4AB2256791F111C718CB0EEF8 /* SwiftSupport */,
-			);
-			path = FBSnapshotTestCase;
-			sourceTree = "<group>";
-		};
-		28F7CE5B9818060869A7FB778A0A59D8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				3D5157C1F2E2AE917B68DA029C6A625D /* FBSnapshotTestCase.framework */,
-				5186D093B675CA478C2F9C12D55DE61A /* Pods_ZKAppDelegateSOA_Example.framework */,
-				09118A2C452D238F1122CEF12786C56F /* Pods_ZKAppDelegateSOA_Tests.framework */,
-				0B3C72E7C7FA7FD0F84247D0EBAEE4EA /* ZKAppDelegateSOA.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3288FCB8E15F6401DE6220AE5CA1D27B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F10CBDEE32E5F6BDECFB3D41F7DD0B03 /* FBSnapshotTestCase.modulemap */,
-				7B37D7C695D5C6C47A7C093595CD4F06 /* FBSnapshotTestCase.xcconfig */,
-				4792533D7EE0F440EE722DA4999E845C /* FBSnapshotTestCase-dummy.m */,
-				EF519A026B10AC73ABBE6E658308B29D /* FBSnapshotTestCase-prefix.pch */,
-				A11D5B54955E3381F067364E427B571A /* FBSnapshotTestCase-umbrella.h */,
-				67E276593855381568F725E69496F29C /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/FBSnapshotTestCase";
-			sourceTree = "<group>";
-		};
-		3B8A8224900823B42A393BA9A807545F /* Pods-ZKAppDelegateSOA_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				403F99A3FB153EAB68C9A03746B54E77 /* Info.plist */,
-				AB660C9DD86749DBC30E31418697B209 /* Pods-ZKAppDelegateSOA_Tests.modulemap */,
-				216C08A1F39D07A11E7AD6607194E766 /* Pods-ZKAppDelegateSOA_Tests-acknowledgements.markdown */,
-				2F7AFDFA7B6E1F8EE9805B62316F882A /* Pods-ZKAppDelegateSOA_Tests-acknowledgements.plist */,
-				275D8840F93D783E57AE85CCF8AAEC4E /* Pods-ZKAppDelegateSOA_Tests-dummy.m */,
-				3006B196595B3BEBDE91B5C9319832A8 /* Pods-ZKAppDelegateSOA_Tests-frameworks.sh */,
-				E6225EC2D6A6FA9D471279CFA2E1ED5F /* Pods-ZKAppDelegateSOA_Tests-resources.sh */,
-				0AA866CB7021096D5FE0002F053F7CE9 /* Pods-ZKAppDelegateSOA_Tests-umbrella.h */,
-				95A5C8AE9BC16591DFF9EE1EAD5E1D47 /* Pods-ZKAppDelegateSOA_Tests.debug.xcconfig */,
-				3EB507D763629E15416EAC122A164BE0 /* Pods-ZKAppDelegateSOA_Tests.release.xcconfig */,
-			);
-			name = "Pods-ZKAppDelegateSOA_Tests";
-			path = "Target Support Files/Pods-ZKAppDelegateSOA_Tests";
-			sourceTree = "<group>";
-		};
-		77CC4E7A4273B8BF2B4160FD4CC325A0 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				ABEF1BEF5B8091AC32AF42F61D0E4ADF /* Pods-ZKAppDelegateSOA_Example */,
-				3B8A8224900823B42A393BA9A807545F /* Pods-ZKAppDelegateSOA_Tests */,
+				EFF942659CAD2B7B900B68AE398D1A26 /* Pods-ZKAppDelegateSOA_Example */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		77E6A3533BFFC5453A29188F8955E61A /* iOS */ = {
+		36DFD5ED01526C0B7F791A1EBFDE3945 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F6DA36E1CA4C3D87F6E85F737FA483C3 /* Foundation.framework */,
-				C2379EEB1B2E42B0DADE15CB60E65F85 /* QuartzCore.framework */,
-				37B206F681A10A3CEFD3120DC6A65DCE /* UIKit.framework */,
-				4CCF8FB06D0D8E2640C57D460AB67AF6 /* XCTest.framework */,
+				ED71BFFEBACB64CCBF0C0D29672CE571 /* ZKAppDelegateSOA */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		69C2DC395964B3C02B973AC3A5AE7DE1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				B5CDE3FA8ABB952E9165E8597BE9CE5A /* Development Pods */,
-				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				FBD2D672921284E66F309CA3462F84D6 /* Pods */,
-				28F7CE5B9818060869A7FB778A0A59D8 /* Products */,
-				77CC4E7A4273B8BF2B4160FD4CC325A0 /* Targets Support Files */,
+				2A09D9FB1E7B8757776C2E9D640A8316 /* Pods_ZKAppDelegateSOA_Example.framework */,
+				A02744346E73162A7EA92F2870D33ED3 /* ZKAppDelegateSOA.framework */,
 			);
+			name = Products;
 			sourceTree = "<group>";
 		};
-		8BF8C3E07817054D8D1DEE8ED5275967 /* Support Files */ = {
+		8FD7CAA1BE9ABEFB54458E5AAD7AAA86 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				047397CC4BF7E3618EA99480E31A67B6 /* Info.plist */,
-				9B0B8BEB5DFDC1A7C150470EFCA435B9 /* ZKAppDelegateSOA.modulemap */,
-				593AD380FD6E688000D2E3D9CE290559 /* ZKAppDelegateSOA.xcconfig */,
-				E38CACCBE059A639E0C9B02AF396E150 /* ZKAppDelegateSOA-dummy.m */,
-				3D930BA8BC92B74BC43A95A0683B55C6 /* ZKAppDelegateSOA-prefix.pch */,
-				AC38D6649DA209EBD4055C353B98590E /* ZKAppDelegateSOA-umbrella.h */,
+				E3261524EA79830FB897886C0B7FF33C /* ZKAppDelegateSOA.modulemap */,
+				BA65795D7C136BE4834D3EBC36B84069 /* ZKAppDelegateSOA-dummy.m */,
+				075D0AC8F4F3D4360EB937021C3A64C9 /* ZKAppDelegateSOA-Info.plist */,
+				F1A691D877714F69F42A6672E90336CF /* ZKAppDelegateSOA-prefix.pch */,
+				2993FAC3AE1B0A2D074662B06EB858DE /* ZKAppDelegateSOA-umbrella.h */,
+				8AB54C5295CA734269165B0FE7E1F309 /* ZKAppDelegateSOA.debug.xcconfig */,
+				F3B8ECC4EBA19F8421AB8DF7097F5F9D /* ZKAppDelegateSOA.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/ZKAppDelegateSOA";
 			sourceTree = "<group>";
 		};
-		99E46DD4AB2256791F111C718CB0EEF8 /* SwiftSupport */ = {
+		C873DDCF6E644EDC20B7613521FA66D0 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */,
-			);
-			name = SwiftSupport;
-			sourceTree = "<group>";
-		};
-		ABEF1BEF5B8091AC32AF42F61D0E4ADF /* Pods-ZKAppDelegateSOA_Example */ = {
-			isa = PBXGroup;
-			children = (
-				03CBCB3CD1C459B41D93295AFA283C3B /* Info.plist */,
-				F67D28F85A19EDA497855D6A5C14E6BF /* Pods-ZKAppDelegateSOA_Example.modulemap */,
-				10BCA9F536CC6023F4E64213E416C0B4 /* Pods-ZKAppDelegateSOA_Example-acknowledgements.markdown */,
-				C84E74ED8475714C3E20CA4D00347628 /* Pods-ZKAppDelegateSOA_Example-acknowledgements.plist */,
-				524A8D2C0162DF68CF514AD925316974 /* Pods-ZKAppDelegateSOA_Example-dummy.m */,
-				E3D2BB2A519ED80FDD0837AC99E1D229 /* Pods-ZKAppDelegateSOA_Example-frameworks.sh */,
-				E369A2A6ABAB89C0F3E9F2990DBC1A6A /* Pods-ZKAppDelegateSOA_Example-resources.sh */,
-				B1166F02AC155B65E3A2F52ECD94FC53 /* Pods-ZKAppDelegateSOA_Example-umbrella.h */,
-				47EB038BDBFBD359249C9723FC24C9D9 /* Pods-ZKAppDelegateSOA_Example.debug.xcconfig */,
-				C34EA934EED9565AB021937E181E7CE8 /* Pods-ZKAppDelegateSOA_Example.release.xcconfig */,
-			);
-			name = "Pods-ZKAppDelegateSOA_Example";
-			path = "Target Support Files/Pods-ZKAppDelegateSOA_Example";
-			sourceTree = "<group>";
-		};
-		B5CDE3FA8ABB952E9165E8597BE9CE5A /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DB2F95F2B08B5724C2A0FC38963F0EBE /* ZKAppDelegateSOA */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		CC3FBECAEDA45F749525481FED40849E /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				63034467B3F63B004F82F56286B4B1C7 /* LICENSE */,
-				85168BBC4C39273DC1AAC3CF309406D6 /* README.md */,
-				D18A63F8F56AE3B036B82C2AD6B400F6 /* ZKAppDelegateSOA.podspec */,
+				2B3B23743CE4D356FA1C31D024537E2C /* LICENSE */,
+				202F3D60A1499A48B9E2C000703D4C73 /* README.md */,
+				1160C8121035BF7CC693DB7E7753CE71 /* ZKAppDelegateSOA.podspec */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		DB2F95F2B08B5724C2A0FC38963F0EBE /* ZKAppDelegateSOA */ = {
+		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				4B12520E21D30F6A000CBA5D /* ZKAppDelegateSOA.h */,
-				4B12520D21D30F6A000CBA5D /* ZKAppDelegateSOA.m */,
-				CC3FBECAEDA45F749525481FED40849E /* Pod */,
-				8BF8C3E07817054D8D1DEE8ED5275967 /* Support Files */,
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				36DFD5ED01526C0B7F791A1EBFDE3945 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				69C2DC395964B3C02B973AC3A5AE7DE1 /* Products */,
+				1616C990FF81665994212A6C4928523C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ED71BFFEBACB64CCBF0C0D29672CE571 /* ZKAppDelegateSOA */ = {
+			isa = PBXGroup;
+			children = (
+				8455CA256045690D4938FD556B7D72AC /* ZKAppDelegateSOA.h */,
+				1EF13876341304D29D51B2261B68315D /* ZKAppDelegateSOA.m */,
+				C873DDCF6E644EDC20B7613521FA66D0 /* Pod */,
+				8FD7CAA1BE9ABEFB54458E5AAD7AAA86 /* Support Files */,
 			);
 			name = ZKAppDelegateSOA;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		F35791481CAFDD8E7715AE1B44687328 /* Core */ = {
+		EFF942659CAD2B7B900B68AE398D1A26 /* Pods-ZKAppDelegateSOA_Example */ = {
 			isa = PBXGroup;
 			children = (
-				E37899BD4B349060AA147E2A3721D3A2 /* FBSnapshotTestCase.h */,
-				39577E2B806B8B2D019998DE60728F63 /* FBSnapshotTestCase.m */,
-				7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */,
-				58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */,
-				1374B79237CAC07693E99442FBED1F15 /* FBSnapshotTestController.h */,
-				052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */,
-				B9109B8B333B5A1A3E92EFC09EDC10AC /* UIApplication+StrictKeyWindow.h */,
-				2EECE81A9AEC1ED1057A9C3C88DBCEBE /* UIApplication+StrictKeyWindow.m */,
-				432938111B6FF0189EFFEDF2F845B308 /* UIImage+Compare.h */,
-				3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */,
-				85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */,
-				B9CEF7D6C5E08AB80E58DABC75D882BC /* UIImage+Diff.m */,
-				0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */,
-				3DBFBDCC891B770A2AC9EF0FB164B751 /* UIImage+Snapshot.m */,
+				7BD0E89144CD0CFA9CC436ACDACFDA86 /* Pods-ZKAppDelegateSOA_Example.modulemap */,
+				AF7050DE668828048CF044DEC272F6A4 /* Pods-ZKAppDelegateSOA_Example-acknowledgements.markdown */,
+				79CF2E4FC5395341302FA99C0FA5E514 /* Pods-ZKAppDelegateSOA_Example-acknowledgements.plist */,
+				0260BA55EB90A9F8A61BEC01CC08AC6D /* Pods-ZKAppDelegateSOA_Example-dummy.m */,
+				6EAC3EF1D7220E09CE9F73EEAEE49E86 /* Pods-ZKAppDelegateSOA_Example-frameworks.sh */,
+				963D8E317F4DF97D80D0B80A6F0491B4 /* Pods-ZKAppDelegateSOA_Example-Info.plist */,
+				C4DD6E1EBD12371A3144619EA45C43A1 /* Pods-ZKAppDelegateSOA_Example-umbrella.h */,
+				495A5F027305295999A6D447C7914CC8 /* Pods-ZKAppDelegateSOA_Example.debug.xcconfig */,
+				FBC12F47CB525D6DD54EACDD8EA144F1 /* Pods-ZKAppDelegateSOA_Example.release.xcconfig */,
 			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		FBD2D672921284E66F309CA3462F84D6 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2287B5EBEAA3C332F8DB9A1E61F5B097 /* FBSnapshotTestCase */,
-			);
-			name = Pods;
+			name = "Pods-ZKAppDelegateSOA_Example";
+			path = "Target Support Files/Pods-ZKAppDelegateSOA_Example";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		567F935EF8DB0EBE1F089179DC230180 /* Headers */ = {
+		A4DD268B6BAA3DDCCBE995F43F7CCEBD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C2B936FE620D6FCAF7D6F6A6818C4F5 /* Pods-ZKAppDelegateSOA_Example-umbrella.h in Headers */,
+				752BA77D70DDDB9E980B0E8F3553BC83 /* Pods-ZKAppDelegateSOA_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F0D2B8F675F8B99EEC31EDD668A8FAF /* Headers */ = {
+		DD7F6FF908A3D5CAEC2DD7E675E9C977 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CF5865BAF828AB9A7C56F3A1B1C856F /* FBSnapshotTestCase-umbrella.h in Headers */,
-				B08725BB938AA3AACCA3C8C818FA4CF6 /* FBSnapshotTestCase.h in Headers */,
-				4D600539FC2E29EA7E28A2DA8A8B328C /* FBSnapshotTestCasePlatform.h in Headers */,
-				59FD5FAEFCF13CD39358A6F36C50BED8 /* FBSnapshotTestController.h in Headers */,
-				BCDA265400AF5BCF21074C5AF1FD09A8 /* UIApplication+StrictKeyWindow.h in Headers */,
-				4B12521021D30F6A000CBA5D /* ZKAppDelegateSOA.h in Headers */,
-				63EA4B9CBBAB30A69C2D73693019FDC5 /* UIImage+Compare.h in Headers */,
-				73247510D7AD93E5FDBA474B353BF919 /* UIImage+Diff.h in Headers */,
-				387D066A1A34ED7DF0F716CB3A8B746D /* UIImage+Snapshot.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ABC7CD210065BE19FA11311E8BAD5DBA /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C4C99DB49F9F8E04DD40B48DB909098A /* ZKAppDelegateSOA-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B3B1E6760D96D9824B3D6C71B0DAAC82 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A57F2E08CEC5ECCC1A02DAC71B12D988 /* Pods-ZKAppDelegateSOA_Tests-umbrella.h in Headers */,
+				D25A51F0DF0A86FAF02EE086D2C84943 /* ZKAppDelegateSOA-umbrella.h in Headers */,
+				1C33B545E91EBD983D0DC6238F22CD4D /* ZKAppDelegateSOA.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		334A29FCE37772088CA7B4B15CD6E587 /* ZKAppDelegateSOA */ = {
+		2F0D2A4B6FDA9F5E55932F831384E82E /* ZKAppDelegateSOA */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 74FD816F4B38FE64A37CC700DA0E4AD8 /* Build configuration list for PBXNativeTarget "ZKAppDelegateSOA" */;
+			buildConfigurationList = 2571B29405F46CE022E9CD3A0AB4A9DA /* Build configuration list for PBXNativeTarget "ZKAppDelegateSOA" */;
 			buildPhases = (
-				ABC7CD210065BE19FA11311E8BAD5DBA /* Headers */,
-				7210C69A47624A5376F3E1944C39413D /* Sources */,
-				558A25F5A0EED87B4162E3567350FE06 /* Frameworks */,
-				E124C1255F9A2696922C2B0838CF5D78 /* Resources */,
+				DD7F6FF908A3D5CAEC2DD7E675E9C977 /* Headers */,
+				C2C8CE3865E4374DCD6EDBE58DA78A2F /* Sources */,
+				C79C8D26EA8B1634D8C517479B2C915C /* Frameworks */,
+				224AC71918FED0458809C02E74EDF839 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -421,76 +219,38 @@
 			);
 			name = ZKAppDelegateSOA;
 			productName = ZKAppDelegateSOA;
-			productReference = 0B3C72E7C7FA7FD0F84247D0EBAEE4EA /* ZKAppDelegateSOA.framework */;
+			productReference = A02744346E73162A7EA92F2870D33ED3 /* ZKAppDelegateSOA.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		38BEF5E02864A190A5F721919A8E5514 /* Pods-ZKAppDelegateSOA_Tests */ = {
+		59F64F6F48D73942A5B39B0F97C562C7 /* Pods-ZKAppDelegateSOA_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E3057E67B7EDF23F3337C87AE8AE387B /* Build configuration list for PBXNativeTarget "Pods-ZKAppDelegateSOA_Tests" */;
+			buildConfigurationList = 41D8BE7D8F4CADEBACEFA63F936B0DF5 /* Build configuration list for PBXNativeTarget "Pods-ZKAppDelegateSOA_Example" */;
 			buildPhases = (
-				B3B1E6760D96D9824B3D6C71B0DAAC82 /* Headers */,
-				A1C1F486F41709398E614F7C9289A1A1 /* Sources */,
-				7AD98B6A2F38E1A3ED7AFBB4D857186C /* Frameworks */,
-				C3308A77E7D48B891CC65586AE178BD0 /* Resources */,
+				A4DD268B6BAA3DDCCBE995F43F7CCEBD /* Headers */,
+				52C9DA6652571AFB05ED2EDA33039613 /* Sources */,
+				A5B5406AA29F308245DFAC5A9D0FE978 /* Frameworks */,
+				88FB2AD0F212603947FC0644DAC02829 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4492630A21B76ABF0C70FABD504ABF22 /* PBXTargetDependency */,
-				7D3AF42AF6AC6D1175C510A45B97EEE4 /* PBXTargetDependency */,
-			);
-			name = "Pods-ZKAppDelegateSOA_Tests";
-			productName = "Pods-ZKAppDelegateSOA_Tests";
-			productReference = 09118A2C452D238F1122CEF12786C56F /* Pods_ZKAppDelegateSOA_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		9208F82521C84CC962FB475DC38D3371 /* FBSnapshotTestCase */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8DE36427AE56C81503352C1A9AF63448 /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */;
-			buildPhases = (
-				8F0D2B8F675F8B99EEC31EDD668A8FAF /* Headers */,
-				533D6D3D5261BC5070BDFEDDCFD1267C /* Sources */,
-				06A086085916D88E8F989A2FD78DFDFB /* Frameworks */,
-				AD4E4321B395852DC07143FDAF5069AF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FBSnapshotTestCase;
-			productName = FBSnapshotTestCase;
-			productReference = 3D5157C1F2E2AE917B68DA029C6A625D /* FBSnapshotTestCase.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		E0A367AF7523A6CB3FDFE765E9A5C7D1 /* Pods-ZKAppDelegateSOA_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E56B46CAE326E4E5138E8CACBC58B969 /* Build configuration list for PBXNativeTarget "Pods-ZKAppDelegateSOA_Example" */;
-			buildPhases = (
-				567F935EF8DB0EBE1F089179DC230180 /* Headers */,
-				6A8CBB159923399E034D18D0922CB1E3 /* Sources */,
-				1B1434E30A2214F4B5C036EE763292DB /* Frameworks */,
-				C1FD4106B5579341B188215502C922AA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				97418D5FF392D9864494A8E8E7C358C1 /* PBXTargetDependency */,
+				EE512BACA5B8AC3AC9693BCC37083494 /* PBXTargetDependency */,
 			);
 			name = "Pods-ZKAppDelegateSOA_Example";
 			productName = "Pods-ZKAppDelegateSOA_Example";
-			productReference = 5186D093B675CA478C2F9C12D55DE61A /* Pods_ZKAppDelegateSOA_Example.framework */;
+			productReference = 2A09D9FB1E7B8757776C2E9D640A8316 /* Pods_ZKAppDelegateSOA_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -498,42 +258,26 @@
 				en,
 				Base,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 28F7CE5B9818060869A7FB778A0A59D8 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 69C2DC395964B3C02B973AC3A5AE7DE1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9208F82521C84CC962FB475DC38D3371 /* FBSnapshotTestCase */,
-				E0A367AF7523A6CB3FDFE765E9A5C7D1 /* Pods-ZKAppDelegateSOA_Example */,
-				38BEF5E02864A190A5F721919A8E5514 /* Pods-ZKAppDelegateSOA_Tests */,
-				334A29FCE37772088CA7B4B15CD6E587 /* ZKAppDelegateSOA */,
+				59F64F6F48D73942A5B39B0F97C562C7 /* Pods-ZKAppDelegateSOA_Example */,
+				2F0D2A4B6FDA9F5E55932F831384E82E /* ZKAppDelegateSOA */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		AD4E4321B395852DC07143FDAF5069AF /* Resources */ = {
+		224AC71918FED0458809C02E74EDF839 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C1FD4106B5579341B188215502C922AA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C3308A77E7D48B891CC65586AE178BD0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E124C1255F9A2696922C2B0838CF5D78 /* Resources */ = {
+		88FB2AD0F212603947FC0644DAC02829 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -543,232 +287,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		533D6D3D5261BC5070BDFEDDCFD1267C /* Sources */ = {
+		52C9DA6652571AFB05ED2EDA33039613 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				459F58959A5C947E77A424BF94098D08 /* FBSnapshotTestCase-dummy.m in Sources */,
-				6EC17B6986CC7F9EBDF0521AE86F371B /* FBSnapshotTestCase.m in Sources */,
-				6B71ACB6D56B970D0B2AD8EE2B79D96F /* FBSnapshotTestCasePlatform.m in Sources */,
-				E2E2BC984CCC1978CB9E22B72258C641 /* FBSnapshotTestController.m in Sources */,
-				163DC390363C339936B3114C72FE6716 /* SwiftSupport.swift in Sources */,
-				AFF108D6E8D891F7B8148CA0158B2A23 /* UIApplication+StrictKeyWindow.m in Sources */,
-				4C022C88B9E8D527B1426B5281756EDE /* UIImage+Compare.m in Sources */,
-				E4877E179010E4E588B6E9E61B047B60 /* UIImage+Diff.m in Sources */,
-				4B12520F21D30F6A000CBA5D /* ZKAppDelegateSOA.m in Sources */,
-				EA2C5FBB576DBC67BE3E2F5897704BBF /* UIImage+Snapshot.m in Sources */,
+				501875F40C0A283C7C639F0EABC25882 /* Pods-ZKAppDelegateSOA_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6A8CBB159923399E034D18D0922CB1E3 /* Sources */ = {
+		C2C8CE3865E4374DCD6EDBE58DA78A2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A7A65F2B6E0705461AE16CB59A7BEB9 /* Pods-ZKAppDelegateSOA_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7210C69A47624A5376F3E1944C39413D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				93D90AB7EBD57BDD61ACBC75534453D6 /* ZKAppDelegateSOA-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1C1F486F41709398E614F7C9289A1A1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A9256DA4688DA94D0B27B348BFC1D717 /* Pods-ZKAppDelegateSOA_Tests-dummy.m in Sources */,
+				0C037E8AFFA13CFE463B5570820187B6 /* ZKAppDelegateSOA-dummy.m in Sources */,
+				ACD63D9B7A938E368D48374E908DD717 /* ZKAppDelegateSOA.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4492630A21B76ABF0C70FABD504ABF22 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FBSnapshotTestCase;
-			target = 9208F82521C84CC962FB475DC38D3371 /* FBSnapshotTestCase */;
-			targetProxy = 5D79A67EC8AFC9F21D45F4596068B1E1 /* PBXContainerItemProxy */;
-		};
-		7D3AF42AF6AC6D1175C510A45B97EEE4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-ZKAppDelegateSOA_Example";
-			target = E0A367AF7523A6CB3FDFE765E9A5C7D1 /* Pods-ZKAppDelegateSOA_Example */;
-			targetProxy = 31BDD6591018A0554E5B368177E02EFF /* PBXContainerItemProxy */;
-		};
-		97418D5FF392D9864494A8E8E7C358C1 /* PBXTargetDependency */ = {
+		EE512BACA5B8AC3AC9693BCC37083494 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ZKAppDelegateSOA;
-			target = 334A29FCE37772088CA7B4B15CD6E587 /* ZKAppDelegateSOA */;
-			targetProxy = F532EAE01779D6E2A2E872D2615D8302 /* PBXContainerItemProxy */;
+			target = 2F0D2A4B6FDA9F5E55932F831384E82E /* ZKAppDelegateSOA */;
+			targetProxy = 1AEC4BEC4429437D3C2DAC980AFE794D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		42653CED19211D4DE2E1CE995E2CE1D2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B37D7C695D5C6C47A7C093595CD4F06 /* FBSnapshotTestCase.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
-				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
-				PRODUCT_NAME = FBSnapshotTestCase;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		50E9ED329B5F3B742F5A5D12A40CC978 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47EB038BDBFBD359249C9723FC24C9D9 /* Pods-ZKAppDelegateSOA_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ZKAppDelegateSOA_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ZKAppDelegateSOA_Example/Pods-ZKAppDelegateSOA_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		623D3C9C06FDF562469F484AADA98E8F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 593AD380FD6E688000D2E3D9CE290559 /* ZKAppDelegateSOA.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ZKAppDelegateSOA/ZKAppDelegateSOA-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZKAppDelegateSOA/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZKAppDelegateSOA/ZKAppDelegateSOA.modulemap";
-				PRODUCT_MODULE_NAME = ZKAppDelegateSOA;
-				PRODUCT_NAME = ZKAppDelegateSOA;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		731E143A1753E89B9FDCF64E407BA4A1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B37D7C695D5C6C47A7C093595CD4F06 /* FBSnapshotTestCase.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
-				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
-				PRODUCT_NAME = FBSnapshotTestCase;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7CC55D0F1ED099C1CA2FAAD902056D64 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95A5C8AE9BC16591DFF9EE1EAD5E1D47 /* Pods-ZKAppDelegateSOA_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ZKAppDelegateSOA_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ZKAppDelegateSOA_Tests/Pods-ZKAppDelegateSOA_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		85B95B1234E227C814CCC2C7902D0916 /* Release */ = {
+		6D42DC62C4F2E194221DF89C48496C98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -791,14 +343,13 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -820,17 +371,49 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		8DD78F90971B2B56A0360498D5F19FEA /* Release */ = {
+		AF3B428A5B4E24662B58666EF33E0D05 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 593AD380FD6E688000D2E3D9CE290559 /* ZKAppDelegateSOA.xcconfig */;
+			baseConfigurationReference = 495A5F027305295999A6D447C7914CC8 /* Pods-ZKAppDelegateSOA_Example.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZKAppDelegateSOA_Example/Pods-ZKAppDelegateSOA_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZKAppDelegateSOA_Example/Pods-ZKAppDelegateSOA_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D0B496A4A61238336B3619290440ED2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AB54C5295CA734269165B0FE7E1F309 /* ZKAppDelegateSOA.debug.xcconfig */;
+			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -840,7 +423,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/ZKAppDelegateSOA/ZKAppDelegateSOA-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZKAppDelegateSOA/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/ZKAppDelegateSOA/ZKAppDelegateSOA-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -850,6 +433,39 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3C263F95AF327CFB98FDE7B18C8FCFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBC12F47CB525D6DD54EACDD8EA144F1 /* Pods-ZKAppDelegateSOA_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ZKAppDelegateSOA_Example/Pods-ZKAppDelegateSOA_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ZKAppDelegateSOA_Example/Pods-ZKAppDelegateSOA_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -857,10 +473,42 @@
 			};
 			name = Release;
 		};
-		A73625DEBD810B78234FA1958C191C8C /* Debug */ = {
+		DC76C82073065416CBAAD24F5FC450B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3B8ECC4EBA19F8421AB8DF7097F5F9D /* ZKAppDelegateSOA.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ZKAppDelegateSOA/ZKAppDelegateSOA-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ZKAppDelegateSOA/ZKAppDelegateSOA-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ZKAppDelegateSOA/ZKAppDelegateSOA.modulemap";
+				PRODUCT_MODULE_NAME = ZKAppDelegateSOA;
+				PRODUCT_NAME = ZKAppDelegateSOA;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E4D0D44B090D4284607EBBC4E71A96C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -883,14 +531,13 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -918,128 +565,42 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		E50FEFED4A4F49C140FFB69DD5DCF8CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EB507D763629E15416EAC122A164BE0 /* Pods-ZKAppDelegateSOA_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ZKAppDelegateSOA_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ZKAppDelegateSOA_Tests/Pods-ZKAppDelegateSOA_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E91FAC2BBE1428471A765FB71208CA98 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C34EA934EED9565AB021937E181E7CE8 /* Pods-ZKAppDelegateSOA_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ZKAppDelegateSOA_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ZKAppDelegateSOA_Example/Pods-ZKAppDelegateSOA_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		2571B29405F46CE022E9CD3A0AB4A9DA /* Build configuration list for PBXNativeTarget "ZKAppDelegateSOA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A73625DEBD810B78234FA1958C191C8C /* Debug */,
-				85B95B1234E227C814CCC2C7902D0916 /* Release */,
+				D0B496A4A61238336B3619290440ED2E /* Debug */,
+				DC76C82073065416CBAAD24F5FC450B5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		74FD816F4B38FE64A37CC700DA0E4AD8 /* Build configuration list for PBXNativeTarget "ZKAppDelegateSOA" */ = {
+		41D8BE7D8F4CADEBACEFA63F936B0DF5 /* Build configuration list for PBXNativeTarget "Pods-ZKAppDelegateSOA_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				623D3C9C06FDF562469F484AADA98E8F /* Debug */,
-				8DD78F90971B2B56A0360498D5F19FEA /* Release */,
+				AF3B428A5B4E24662B58666EF33E0D05 /* Debug */,
+				D3C263F95AF327CFB98FDE7B18C8FCFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8DE36427AE56C81503352C1A9AF63448 /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				42653CED19211D4DE2E1CE995E2CE1D2 /* Debug */,
-				731E143A1753E89B9FDCF64E407BA4A1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E3057E67B7EDF23F3337C87AE8AE387B /* Build configuration list for PBXNativeTarget "Pods-ZKAppDelegateSOA_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7CC55D0F1ED099C1CA2FAAD902056D64 /* Debug */,
-				E50FEFED4A4F49C140FFB69DD5DCF8CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E56B46CAE326E4E5138E8CACBC58B969 /* Build configuration list for PBXNativeTarget "Pods-ZKAppDelegateSOA_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				50E9ED329B5F3B742F5A5D12A40CC978 /* Debug */,
-				E91FAC2BBE1428471A765FB71208CA98 /* Release */,
+				E4D0D44B090D4284607EBBC4E71A96C1 /* Debug */,
+				6D42DC62C4F2E194221DF89C48496C98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }

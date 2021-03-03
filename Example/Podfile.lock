@@ -1,27 +1,16 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
   - ZKAppDelegateSOA (0.1.0)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase
   - ZKAppDelegateSOA (from `../`)
-
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
   ZKAppDelegateSOA:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  ZKAppDelegateSOA: d92978897bc9c35b6b7e0f7fd692b535c5ab286d
+  ZKAppDelegateSOA: 5cb27a645718457556e64e59840e525ca910c50a
 
-PODFILE CHECKSUM: 1056df3b6a3d34c24b39942941b58ab906e08e89
+PODFILE CHECKSUM: 71d0678ed5faf4180a6aa4086d5f94a6173a2a57
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.10.0
