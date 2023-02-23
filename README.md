@@ -17,7 +17,7 @@ ZKAppDelegateSOA is available through [CocoaPods](https://cocoapods.org). To ins
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'ZKAppDelegateSOA' :git=>https://github.com/kaiser143/ZKAppDelegateSOA.git :tag=>0.1.0
+pod 'ZKAppDelegateSOA' :git=>https://github.com/kaiser143/ZKAppDelegateSOA.git :tag=>0.1.2
 ```
 
 ## Author
