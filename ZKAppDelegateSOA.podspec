@@ -28,15 +28,21 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/kaiser143/ZKAppDelegateSOA.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '12.0'
+  s.swift_version = '5.0'
 
   s.source_files = 'ZKAppDelegateSOA/Classes/**/*'
+  s.public_header_files = 'ZKAppDelegateSOA/Classes/**/*.h'
+  s.frameworks = 'UIKit'
+
+  s.pod_target_xcconfig = {
+    'DEFINES_MODULE' => 'YES'
+  }
   
   # s.resource_bundles = {
   #   'ZKAppDelegateSOA' => ['ZKAppDelegateSOA/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  # s.dependency 'AFNetworking', '~> 2.3'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
